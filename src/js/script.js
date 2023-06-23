@@ -40,12 +40,12 @@ jQuery(function ($) {
       450: {
         // 画面幅450px以上で適用
         slidesPerView: 1.7,
-        spaceBetween: 15, // スライド間の距離
+        spaceBetween: 12, // スライド間の距離
       },
       600: {
         // 画面幅600px以上で適用
         slidesPerView: 2,
-        spaceBetween: 23, // スライド間の距離
+        spaceBetween: 20, // スライド間の距離
       },
       768: {
         // 画面幅768px以上で適用
