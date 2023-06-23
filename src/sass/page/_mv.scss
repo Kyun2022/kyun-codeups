@@ -2,11 +2,9 @@
 
 .mv {
   width: 100%;
-  // height: 100vh;
-  height: rem(667);
+  height: 100vh;
   @include mq(md) {
-    // height: calc(100vh + rem(90));
-    height: rem(768);
+    height: calc(100vh + rem(90));
     position: relative;
   }
 }
@@ -25,12 +23,12 @@
 
 .mv__title {
   position: absolute;
-  top: rem(293);
+  top: 50%;
   left: 50%;
-  transform: translateX(-46%);
+  transform: translate(-46%, calc(50% - rem(80)));
   z-index: 100;
   @include mq(md) {
-    top: rem(360);
+    transform: translate(-46%, calc(50% - rem(90)));
   }
 }
 

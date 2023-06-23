@@ -16,7 +16,6 @@ jQuery(function ($) {
   const swiper = new Swiper(".verticalSlider", {
     direction: "vertical",
     loop: true,
-    allowTouchMove: false,
     effect: "slide",
     speed: 3000,
     autoplay: {
