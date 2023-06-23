@@ -16,6 +16,7 @@ jQuery(function ($) {
   const swiper = new Swiper(".verticalSlider", {
     direction: "vertical",
     loop: true,
+    allowTouchMove: false,
     effect: "slide",
     speed: 3000,
     autoplay: {
@@ -29,8 +30,8 @@ jQuery(function ($) {
     loop: true,
     effect: "slide",
     slidesPerView: 1.1,
-    spaceBetween: 16, // スライド間の距離
-    allowTouchMove: false,
+    spaceBetween: 10
+    8, // スライド間の距離
     autoplay: {
       delay: 3500,
     },
@@ -39,12 +40,12 @@ jQuery(function ($) {
       450: {
         // 画面幅450px以上で適用
         slidesPerView: 1.7,
-        spaceBetween: 20, // スライド間の距離
+        spaceBetween: 15, // スライド間の距離
       },
       600: {
         // 画面幅600px以上で適用
         slidesPerView: 2,
-        spaceBetween: 40, // スライド間の距離
+        spaceBetween: 25, // スライド間の距離
       },
       768: {
         // 画面幅768px以上で適用
@@ -124,7 +125,6 @@ jQuery(function ($) {
     });
   });
 
-
   const box3 = $(".js-slideColor3"),
     speed3 = 600;
   //.js-slideColorの付いた全ての要素に対して下記の処理を行う
@@ -153,29 +153,29 @@ jQuery(function ($) {
   });
 });
 
-  const box4 = $(".js-slideColor4"),
-    speed4 = 600;
-  //.js-slideColorの付いた全ての要素に対して下記の処理を行う
+const box4 = $(".js-slideColor4"),
+  speed4 = 600;
+//.js-slideColorの付いた全ての要素に対して下記の処理を行う
 
-  box4.each(function () {
-    $(".js-slideColor4").append('<div class="is-view4"></div>');
-    const color4 = $(".js-slideColor4").find($(".is-view4")),
-      image4 = $(this).find("img");
-    let counter4 = 0;
+box4.each(function () {
+  $(".js-slideColor4").append('<div class="is-view4"></div>');
+  const color4 = $(".js-slideColor4").find($(".is-view4")),
+    image4 = $(this).find("img");
+  let counter4 = 0;
 
-    image4.css("opacity", "0");
-    color4.css("width", "0%");
-    //inviewを使って背景色が画面に現れたら処理をする
-    color4.on("inview", function () {
-      if (counter4 === 0) {
-        $(this)
-          .delay(300)
-          .animate({ width: "100%" }, speed4, function () {
-            image4.css("opacity", "1");
-            $(this).css({ left: "0", right: "auto" });
-            $(this).animate({ width: "0%" }, speed4);
-          });
-        counter4 = 1;
-      }
-    });
+  image4.css("opacity", "0");
+  color4.css("width", "0%");
+  //inviewを使って背景色が画面に現れたら処理をする
+  color4.on("inview", function () {
+    if (counter4 === 0) {
+      $(this)
+        .delay(300)
+        .animate({ width: "100%" }, speed4, function () {
+          image4.css("opacity", "1");
+          $(this).css({ left: "0", right: "auto" });
+          $(this).animate({ width: "0%" }, speed4);
+        });
+      counter4 = 1;
+    }
   });
+});
