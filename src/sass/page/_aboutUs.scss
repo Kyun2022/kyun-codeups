@@ -3,11 +3,11 @@
 .aboutUs {
   padding: rem(85) 0;
   @include mq(md) {
+    position: relative;
     padding: rem(142) 0 rem(142);
   }
 }
 .aboutUs__inner {
-  position: relative;
 }
 
 .aboutUs__contents {
@@ -101,10 +101,10 @@
 }
 
 .aboutUs__image {
-  display: block;
+  display: inline-block;
   position: absolute;
-  right: rem(-73);
-  bottom: rem(-91);
+  right: calc((83 / 1440) * 100%);
+  bottom: rem(50);
   width: rem(194);
   height: rem(181);
 }

@@ -58,7 +58,7 @@ jQuery(function ($) {
         mySwiperWrapper.style.transitionTimingFunction = "linear";
       },
       resize: function () {
-        horizon.autoplay.start();
+        swiperHorizon.autoplay.start();
       },
     },
     // 前後の矢印

@@ -25,18 +25,18 @@
   object-fit: cover;
 }
 
-.mv__title-block {
+.mv__title {
   position: absolute;
   top: rem(293);
-  left: rem(63);
+  left: 50%;
+  transform: translateX(-46%);
   z-index: 100;
   @include mq(md) {
     top: rem(360);
-    left: rem(472);
   }
 }
 
-.mv__title {
+.mv__title-text {
   font-size: rem(40);
   font-family: $en-font-family2;
   font-weight: $regular;
@@ -48,7 +48,7 @@
     line-height: calc(100 / 80);
   }
 }
-.mv__sub-title {
+.mv__title-subtext {
   font-size: rem(20);
   font-family: $en-font-family1;
   font-weight: $regular;

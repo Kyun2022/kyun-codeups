@@ -2,7 +2,6 @@
 
 .title {
   display: block;
-  text-align: center;
 }
 .title__text {
   text-transform: capitalize;
@@ -14,6 +13,10 @@
     font-size: rem(40);
     line-height: 1;
   }
+}
+
+.title--center {
+  text-align: center;
 }
 .title__text--small {
   text-transform: initial;
