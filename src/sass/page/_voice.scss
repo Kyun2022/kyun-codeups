@@ -41,8 +41,8 @@
   width: rem(71);
   height: rem(162);
   position: absolute;
-  bottom: rem(-70);
-  right: rem(25);
+  bottom: rem(73);
+  right:  calc((180 / 1440) * 100%);
 }
 .voice__image-top img {
   width: 100%;
