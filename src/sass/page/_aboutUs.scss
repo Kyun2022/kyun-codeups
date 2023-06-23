@@ -1,0 +1,116 @@
+@use "global" as *;
+
+.aboutUs {
+  padding: rem(85) 0;
+  @include mq(md) {
+    padding: rem(142) 0 rem(142);
+  }
+}
+.aboutUs__inner {
+  position: relative;
+}
+
+.aboutUs__contents {
+  margin-top: rem(29);
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    margin-top: rem(42);
+    background-image: url("/assets/images/common/about-pc_1.jpg"),
+      url("/assets/images/common/about-pc_2.jpg");
+    background-size: calc((400 / 1080) * 100%) calc((606 / 661) * 100%),
+      calc((880 / 1080) * 100%) calc((581 / 661) * 100%);
+    background-position: top 0 left 0, right bottom calc((5 / 661) * 100%);
+    background-repeat: no-repeat, no-repeat;
+    height: rem(661);
+    padding-top: calc((661 / 1080) * 100%);
+    position: relative;
+    width: 100%;
+  }
+}
+.aboutUs__images {
+  background-image: url("/assets/images/common/about-pc_1.jpg"),
+    url("/assets/images/common/about-pc_2.jpg");
+  background-size: calc((128 / 345) * 100%) calc((194 / 212) * 100%),
+    calc((281 / 345) * 100%) calc((186 / 212) * 100%);
+  background-position: top 0 left 0, right bottom calc((26 / 212) * 100%);
+  background-repeat: no-repeat, no-repeat;
+  height: rem(212);
+  padding-top: calc((212 / 345) * 100%);
+  position: relative;
+  width: 100%;
+}
+
+.aboutUs__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: initial;
+    flex-direction: row;
+    position: absolute;
+    top: calc((200 / 661) * 100%);
+    right: calc((41 / 1080) * 100%);
+    max-width: rem(840);
+    width: 100%;
+  }
+}
+
+.aboutUs__title-block {
+  @include mq(md) {
+    max-width: calc((400 / 840) * 100%);
+    width: 100%;
+  }
+}
+
+.aboutUs__sub-title {
+  font-size: rem(40);
+  font-family: $en-font-family1;
+  font-weight: $regular;
+  line-height: calc(40 / 40);
+  color: $green;
+  @include mq(md) {
+    font-size: rem(80);
+    color: $white;
+    line-height: calc(100 / 80);
+  }
+}
+
+.aboutUs__meta {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: calc((400 / 840) * 100%);
+    width: 100%;
+    margin-left: rem(40);
+  }
+}
+
+.aboutUs__text {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.aboutUs__button {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.aboutUs__image {
+  display: block;
+  position: absolute;
+  right: rem(-73);
+  bottom: rem(-91);
+  width: rem(194);
+  height: rem(181);
+}
+
+.aboutUs__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

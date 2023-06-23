@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.blog {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: initial;
+    padding-top: rem(100);
+    background-image: url(/assets/images/common/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% rem(500);
+  }
+}
+
+.blog__cards {
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: rem(81);
+  }
+}
+
+
+.blog__button {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+
+

@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.md-none {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+.md-show {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.lg-none {
+  display: none;
+  @include mq(lg) {
+    display: block;
+  }
+}
+
+.lg-show {
+  display: block;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.all-close {
+  display: none;
+}
+
+.space {
+  margin-top: rem(20);
+}
+
+
+
+
+
+
+/*//////////////////////////////////////
+内容
+/////////////////////////////////////*/
+
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

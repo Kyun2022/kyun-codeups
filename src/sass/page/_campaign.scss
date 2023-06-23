@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.campaign {
+  padding-top: rem(40);
+  background-color: $white;
+  @include mq(md) {
+    padding-top: rem(122);
+  }
+}
+
+.campaign__inner {
+  position: relative;
+}
+
+.campaign__button {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(69);
+  }
+}
