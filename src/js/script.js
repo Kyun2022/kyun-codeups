@@ -18,7 +18,6 @@ jQuery(function ($) {
     loop: true,
     effect: "slide",
     speed: 3000,
-    allowTouchMove: false,
     autoplay: {
       delay: 3000,
     },
