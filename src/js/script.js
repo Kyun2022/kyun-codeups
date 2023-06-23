@@ -16,6 +16,7 @@ jQuery(function ($) {
   const swiper = new Swiper(".verticalSlider", {
     direction: "vertical",
     loop: true,
+    allowTouchMove: false,
     effect: "slide",
     speed: 3000,
     autoplay: {
@@ -29,8 +30,8 @@ jQuery(function ($) {
     loop: true,
     effect: "slide",
     slidesPerView: 1.1,
-    spaceBetween: 10
-    8, // スライド間の距離
+    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    spaceBetween: 5, // スライド間の距離
     autoplay: {
       delay: 3500,
     },
@@ -44,7 +45,7 @@ jQuery(function ($) {
       600: {
         // 画面幅600px以上で適用
         slidesPerView: 2,
-        spaceBetween: 25, // スライド間の距離
+        spaceBetween: 23, // スライド間の距離
       },
       768: {
         // 画面幅768px以上で適用

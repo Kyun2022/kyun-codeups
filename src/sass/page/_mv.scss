@@ -3,9 +3,10 @@
 .mv {
   width: 100%;
   height: 100vh;
+  height: rem(667);
   @include mq(md) {
-    height: calc(100vh + rem(90));
     position: relative;
+    height: rem(768);
   }
 }
 .mv__inner {
@@ -25,10 +26,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-46%, calc(50% - rem(80)));
-  z-index: 100;
+  transform: translate(-46%, -55%);
+  z-index: 10;
   @include mq(md) {
-    transform: translate(-46%, calc(50% - rem(90)));
+    transform: translate(-46%, -20%);
   }
 }
 
