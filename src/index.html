@@ -2,30 +2,31 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-  <meta name="format-detection" content="telephone=no" >
-  <meta name="robots" content="noindex" >
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
   <!-- meta情報 -->
   <title>CodeUps</title>
-  <meta name="description" content="" >
-  <meta name="keywords" content="" >
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
   <!-- ogp -->
-  <meta property="og:title" content="" >
-  <meta property="og:type" content="" >
-  <meta property="og:url" content="" >
-  <meta property="og:image" content="" >
-  <meta property="og:site_name" content="" >
-  <meta property="og:description" content="" >
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="/" >
+  <link rel="”icon”" href="/">
   <!-- Google-Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
-  <link rel="stylesheet" href="./assets/css/style.css" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
@@ -33,11 +34,20 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 
-<body>
+<!-- ローディング -->
+
+<body class="fixed">
+  <div class="loading js-loading">
+    <div class="loading__title js-loadingTitle">
+      <p class="loading__title-text">DIVING</p>
+      <h2 class="loading__title-subtext">into&nbsp;the&nbsp;ocean</h2>
+    </div>
+  </div>
+
   <!-- ヘッダー -->
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__logo"><a href="#"><img src="./assets/images/common/logo_1.png" alt="ヘッダーのロゴ"></a></h1>
+      <h1 class="header__logo"><a href="#"><img src="./assets/images/common/logo_1.png" alt="CodeUpsの文字、会社のロゴ"></a></h1>
       <nav class="header__list md-none">
         <ul class="header__items">
           <li class="header__item"><a href="#campaign">campaign<span class="header__sub-title">キャンペーン</span></a></li>
@@ -63,7 +73,7 @@
         <div class="drawer-menu__inner inner">
           <div class="drawer-menu__container-left">
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">キャンペーン</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">キャンペーン</a></p>
               <ul class="drawer-menu__items">
                 <li class="drawer-menu__item"><a href="#">ライセンス講習</a></li>
                 <li class="drawer-menu__item"><a href="#">貸切体験ダイビング</a></li>
@@ -71,10 +81,10 @@
               </ul>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">私たちについて</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">私たちについて</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">ダイビング情報</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">ダイビング情報</a></p>
               <ul class="drawer-menu__items">
                 <li class="drawer-menu__item"><a href="#">ライセンス講習</a></li>
                 <li class="drawer-menu__item"><a href="#">体験ダイビング</a></li>
@@ -82,15 +92,15 @@
               </ul>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">ブログ</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">ブログ</a></p>
             </div>
           </div>
           <div class="drawer-menu__container-right">
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">お客様の声</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">お客様の声</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">料金一覧</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">料金一覧</a></p>
               <ul class="drawer-menu__items">
                 <li class="drawer-menu__item"><a href="#">ライセンス講習</a></li>
                 <li class="drawer-menu__item"><a href="#">体験ダイビング</a></li>
@@ -98,16 +108,16 @@
               </ul>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">よくある質問</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">よくある質問</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon ly-starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">プライバシー<br>ポリシー</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon ly-starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">プライバシー<br>ポリシー</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">利用規約</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">利用規約</a></p>
             </div>
             <div class="drawer-menu__contents">
-              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">お問い合わせ</p>
+              <p class="drawer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">お問い合わせ</a></p>
             </div>
           </div>
         </div>
@@ -120,27 +130,27 @@
     <section class="mv">
       <div class="mv__inner">
         <!-- Swiper -->
-        <div class="swiper verticalSlider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="swiper mv__swiper verticalSlider">
+          <div class="swiper-wrapper verticalSlider__items">
+            <div class="swiper-slide verticalSlider__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_1.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_1.jpg" alt="透き通った海の中で大きな亀が泳いでいる様子">
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide verticalSlider__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_2.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_2.jpg" alt="透き通った海の中から見上げると二人のダイバーと大きな亀が対面している">
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide verticalSlider__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_3.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_3.jpg" alt="海の向こうに２つの島が見え、近くに船が動いている様子">
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide verticalSlider__item">
               <picture>
                 <source srcset="./assets/images/common/mv-pc_4.jpg" media="(min-width: 768px)">
                 <img src="./assets/images/common/mv-sp_4.jpg" alt="青天のなか青々とした穏やかなな波が綺麗な砂浜に注ぎ込んでいる様子">
@@ -149,8 +159,8 @@
           </div>
         </div>
         <div class="mv__title">
-          <h2 class="mv__title-text">DIVING</h2>
-          <p class="mv__title-subtext">into the ocean</p>
+          <p class="mv__title-text">DIVING</p>
+          <h2 class="mv__title-subtext">into&nbsp;the&nbsp;ocean</h2>
         </div>
       </div>
     </section>
@@ -159,196 +169,146 @@
     <section class="campaign" id="campaign">
       <div class="campaign__inner inner">
         <div class="campaign__title title title--center">
-          <h2 class="title__text"><span class="title__text--green">c</span>ampaign</h2>
-          <p class="title__sub-text">キャンペーン</p>
+          <p class="title__text"><span class="title__text--green">c</span>ampaign</p>
+          <h2 class="title__sub-text">キャンペーン</h2>
         </div>
         <!-- Swiper -->
-        <div class="swiper swiperHorizon horizonSlider">
-          <div class="swiper-wrapper">
+        <div class="swiper campaign__slider horizonSlider slider">
+          <div class="swiper-wrapper slider__items">
             <!-- swiper-card -->
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" ></figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">体験ダイビング</span>
-                        <h3 class="slider__title">貸切体験ダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥24,000</p>
-                          <p class="slider__new-price">¥18,000</p>
-                        </div>
-                      </div>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                <div class="slider__body">
+                  <p class="slider__label">体験ダイビング</p>
+                  <h3 class="slider__title">貸切体験ダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;24&#44;000</p>
+                      <p class="slider__new-price">&#165;18&#44;000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"> <img src="./assets/images/common/slider_3.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" > </figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">体験ダイビング</span>
-                        <h3 class="slider__title">ナイトダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥10,000</p>
-                          <p class="slider__new-price">¥8,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"> <img src="./assets/images/common/slider_3.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
+                <div class="slider__body">
+                  <p class="slider__label">体験ダイビング</p>
+                  <h3 class="slider__title">ナイトダイビングナイトダイビングナイトダイビングナイトダイビングナイトダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;10,000</p>
+                      <p class="slider__new-price">&#165;8,000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"> <img src="./assets/images/common/slider_4.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" > </figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">ファンダイビング</span>
-                        <h3 class="slider__title">貸切ファンダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥20,000</p>
-                          <p class="slider__new-price">¥16,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"> <img src="./assets/images/common/slider_4.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
+                <div class="slider__body">
+                  <p class="slider__label">ファンダイビング</p>
+                  <h3 class="slider__title">貸切ファンダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;20&#44;000</p>
+                      <p class="slider__new-price">&#165;16&#44;000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <!-- swiper-card -->
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" ></figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">ライセンス講習</span>
-                        <h3 class="slider__title">ライセンス取得</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥56,000</p>
-                          <p class="slider__new-price">¥46,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                <div class="slider__body">
+                  <p class="slider__label">ライセンス講習</p>
+                  <h3 class="slider__title">ライセンス取得</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;56&#44;000</p>
+                      <p class="slider__new-price">&#165;46&#44;000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" ></figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">体験ダイビング</span>
-                        <h3 class="slider__title">貸切体験ダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥24,000</p>
-                          <p class="slider__new-price">¥18,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"><img src="./assets/images/common/slider_2.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                <div class="slider__body">
+                  <p class="slider__label">体験ダイビング</p>
+                  <h3 class="slider__title">貸切体験ダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;24&#44;000</p>
+                      <p class="slider__new-price">&#165;18&#44;000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"> <img src="./assets/images/common/slider_3.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" > </figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">体験ダイビング</span>
-                        <h3 class="slider__title">ナイトダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥10,000</p>
-                          <p class="slider__new-price">¥8,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"> <img src="./assets/images/common/slider_3.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
+                <div class="slider__body">
+                  <p class="slider__label">体験ダイビング</p>
+                  <h3 class="slider__title">ナイトダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;10,000</p>
+                      <p class="slider__new-price">&#165;8,000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"> <img src="./assets/images/common/slider_4.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" > </figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">ファンダイビング</span>
-                        <h3 class="slider__title">貸切ファンダイビング</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥20,000</p>
-                          <p class="slider__new-price">¥16,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"> <img src="./assets/images/common/slider_4.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"> </figure>
+                <div class="slider__body">
+                  <p class="slider__label">ファンダイビング</p>
+                  <h3 class="slider__title">貸切ファンダイビング</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;20,000</p>
+                      <p class="slider__new-price">&#165;16,000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <!-- swiper-card -->
-            <div class="swiper-slide">
-              <div class="swiper-items">
-                <article class="swiper-item slider">
-                  <a href="#">
-                    <figure class="slider__image"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子" ></figure>
-                    <div class="slider__body">
-                      <div class="slider__header">
-                        <span class="slider__label">ライセンス講習</span>
-                        <h3 class="slider__title">ライセンス取得</h3>
-                      </div>
-                      <div class="slider__meta">
-                        <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
-                        <div class="slider__price-unit">
-                          <p class="slider__old-price">¥56,000</p>
-                          <p class="slider__new-price">¥46,000</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide slider__item">
+              <a href="#">
+                <figure class="slider__image"><img src="./assets/images/common/slider_1.jpg" alt="さまざまな色をした魚が群れで泳いでいる様子"></figure>
+                <div class="slider__body">
+                  <p class="slider__label">ライセンス講習</p>
+                  <h3 class="slider__title">ライセンス取得</h3>
+                  <div class="slider__meta">
+                    <h4 class="slider__sub-title">全部コミコミ(お一人様)</h4>
+                    <div class="slider__price-unit">
+                      <p class="slider__old-price">&#165;56,000</p>
+                      <p class="slider__new-price">&#165;46,000</p>
                     </div>
-                  </a>
-                </article>
-              </div>
-            </div>
+                  </div>
+                </div>
+              </a>
+            </article>
           </div>
         </div>
         <!-- 前後の矢印 -->
-        <div class="swiper-button-prev md-none"></div>
-        <div class="swiper-button-next md-none"></div>
+        <div class="slider__button--prev md-none"></div>
+        <div class="slider__button--next md-none"></div>
         <div class="btn campaign__button"><a href="#">View more</a></div>
       </div>
     </section>
@@ -357,8 +317,8 @@
     <section class="aboutUs" id="aboutUs">
       <div class="aboutUs__inner inner">
         <div class="aboutUs__title title title--center">
-          <h2 class="title__text"><span class="title__text--green">a</span>bout&nbsp;<span class="title__text--small">u</span>s</h2>
-          <p class="title__sub-text">私たちについて</p>
+          <p class="title__text"><span class="title__text--green">a</span>bout&nbsp;<span class="title__text--small">u</span>s</p>
+          <h2 class="title__sub-text">私たちについて</h2>
         </div>
         <div class="aboutUs__contents">
           <div class="aboutUs__images md-show"></div>
@@ -380,14 +340,14 @@
     <section class="information" id="information">
       <div class="information__inner inner">
         <div class="information__title title title--center">
-          <h2 class="title__text"><span class="title__text--green">i</span>nformation</h2>
-          <p class="title__sub-text">ダイビング情報</p>
+          <p class="title__text"><span class="title__text--green">i</span>nformation</p>
+          <h2 class="title__sub-text">ダイビング情報</h2>
         </div>
         <div class="information__container">
           <figure class="information__image js-slideColor"><img src="./assets/images/common/information-pc.jpg" alt=""></figure>
           <div class="information__body">
             <div class="information__header">
-              <h4 class="information__sub-title">ライセンス講習</h4>
+              <h3 class="information__sub-title">ライセンス講習</h3>
             </div>
             <div class="information__meta">
               <p class="information__text text">
@@ -402,16 +362,18 @@
 
     <!-- blog -->
     <section class="blog" id="blog">
+      <div class="blog__bgImage u-desktop"><img src="./assets/images/common/blog-bg.jpg" alt="海の中イメージした様子"></div>
+      <figure class="blog__image md-none"><img src="./assets/images/common/fishes-white.png" alt="魚の群れの様子"></figure>
       <div class="blog__inner inner">
         <div class="blog__title title title--center">
-          <h2 class="title__text title__text--white"><span class="title__text--green title__text--white">b</span>log</h2>
-          <p class="title__sub-text title__sub-text--white">ブログ</p>
+          <p class="title__text title__text--white"><span class="title__text--green title__text--white">b</span>log</p>
+          <h2 class="title__sub-text title__sub-text--white">ブログ</h2>
         </div>
         <div class="blog__cards cards">
           <div class="cards__items">
             <article class="cards-item card">
               <a href="#">
-                <figure class="card__image"><img src="./assets/images/common/card_1.jpg" alt="透き通った海の中でピンク色の大きな珊瑚礁が輝いている様子" ></figure>
+                <figure class="card__image"><img src="./assets/images/common/card_1.jpg" alt="透き通った海の中でピンク色の大きな珊瑚礁が輝いている様子"></figure>
                 <div class="card__body">
                   <div class="card__header">
                     <time datetime="2023-11-17" class="card__date">2023/11/17</time>
@@ -425,7 +387,7 @@
             </article>
             <article class="cards-item card">
               <a href="#">
-                <figure class="card__image"><img src="./assets/images/common/card_2.jpg" alt="透き通った海の中で大きなウミガメが気持ち良さそうに泳いでいる様子" ></figure>
+                <figure class="card__image"><img src="./assets/images/common/card_2.jpg" alt="透き通った海の中で大きなウミガメが気持ち良さそうに泳いでいる様子"></figure>
                 <div class="card__body">
                   <div class="card__header">
                     <time datetime="2023-11-17" class="card__date">2023/11/17</time>
@@ -439,7 +401,7 @@
             </article>
             <article class="cards-item card">
               <a href="#">
-                <figure class="card__image"><img src="./assets/images/common/card_3.jpg" alt="映画ファインディング・ニモで知られるカクレクマノミが珊瑚礁の中から顔をのぞかせている様子" ></figure>
+                <figure class="card__image"><img src="./assets/images/common/card_3.jpg" alt="映画ファインディング・ニモで知られるカクレクマノミが珊瑚礁の中から顔をのぞかせている様子"></figure>
                 <div class="card__body">
                   <div class="card__header">
                     <time datetime="2023-11-17" class="card__date">2023/11/17</time>
@@ -459,11 +421,11 @@
 
     <!-- voice -->
     <section class="voice" id="voice">
-      <figure class="voice__image-top"><img src="./assets/images/common/fishes-right.png" alt="魚の群れのアイコン"></figure>
+      <figure class="voice__image-top"><img src="./assets/images/common/fishes-right.png" alt="魚の群れの様子"></figure>
       <div class="voice__inner inner">
         <div class="voice__title title title--center">
-          <h2 class="title__text"><span class="title__text--green">v</span>oice</h2>
-          <p class="title__sub-text">お客様の声</p>
+          <p class="title__text"><span class="title__text--green">v</span>oice</p>
+          <h2 class="title__sub-text">お客様の声</h2>
         </div>
         <div class="voice__container boxes">
           <div class="boxes__items">
@@ -477,7 +439,7 @@
                     </div>
                     <h3 class="box__title">ここにタイトルが入ります。ここにタイトル</h3>
                   </div>
-                  <figure class="box__image js-slideColor2"><img src="./assets/images/common/box_1.jpg" alt="笑顔の女性が麦わら帽子を被ってこちらを見ている様子" ></figure>
+                  <figure class="box__image js-slideColor2"><img src="./assets/images/common/box_1.jpg" alt="笑顔の女性が麦わら帽子を被ってこちらを見ている様子"></figure>
                 </div>
                 <div class="box__meta">
                   <p class="box__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。</p>
@@ -494,7 +456,7 @@
                     </div>
                     <h3 class="box__title">ここにタイトルが入ります。ここにタイトル</h3>
                   </div>
-                  <figure class="box__image js-slideColor3"><img src="./assets/images/common/box_2.jpg" alt="笑顔の青年が親指を突き出している様子" ></figure>
+                  <figure class="box__image js-slideColor3"><img src="./assets/images/common/box_2.jpg" alt="笑顔の青年が親指を突き出している様子"></figure>
                 </div>
                 <div class="box__meta">
                   <p class="box__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。</p>
@@ -505,15 +467,15 @@
         </div>
         <div class="btn voice__button"><a href="#">View more</a></div>
       </div>
-        <figure class="voice__image-bottom md-none"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のアイコン"></figure>
+      <figure class="voice__image-bottom md-none"><img src="./assets/images/common/seahorse.png" alt="竜の落とし子のデザイン"></figure>
     </section>
 
     <!-- price -->
     <section class="price" id="price">
       <div class="price__inner inner">
         <div class="prive__title title title--center">
-          <h2 class="title__text"><span class="title__text--green">p</span>rice</h2>
-          <p class="title__sub-text">料金一覧</p>
+          <p class="title__text"><span class="title__text--green">p</span>rice</p>
+          <h2 class="title__sub-text">料金一覧</h2>
         </div>
         <div class="price__container">
           <figure class="price__images js-slideColor4">
@@ -525,84 +487,84 @@
               <p class="price__header">ライセンス講習</p>
               <ul class="price__item">
                 <li class="price__label">オープンウォーターダイバーコース</li>
-                <li class="price__text">¥50,000</li>
+                <li class="price__text">&#165;50&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">アドバンスドオープンウォーターコース</li>
-                <li class="price__text">¥60,000</li>
+                <li class="price__text">&#165;60&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">レスキュー＋EFRコース</li>
-                <li class="price__text">¥70,000</li>
+                <li class="price__text">&#165;70&#44;000</li>
               </ul>
             </div>
             <div class="price__items">
               <p class="price__header">体験ダイビング</p>
               <ul class="price__item">
                 <li class="price__label">ビーチ体験ダイビング(半日)</li>
-                <li class="price__text">¥7,000</li>
+                <li class="price__text">&#165;7&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">ビーチ体験ダイビング(1日)</li>
-                <li class="price__text">¥14,000</li>
+                <li class="price__text">&#165;14&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">ボート体験ダイビング(半日)</li>
-                <li class="price__text">¥10,000</li>
+                <li class="price__text">&#165;10&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">ボート体験ダイビング(1日)</li>
-                <li class="price__text">¥18,000</li>
+                <li class="price__text">&#165;18&#44;000</li>
               </ul>
             </div>
             <div class="price__items">
               <p class="price__header">ファンダイビング</p>
               <ul class="price__item">
                 <li class="price__label">ビーチダイビング(2ダイブ)</li>
-                <li class="price__text">¥14,000</li>
+                <li class="price__text">&#165;14&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">ボートダイビング(2ダイブ)</li>
-                <li class="price__text">¥18,000</li>
+                <li class="price__text">&#165;18&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">スペシャルダイビング(2ダイブ)</li>
-                <li class="price__text">¥24,000</li>
+                <li class="price__text">&#165;24&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">ナイトダイビング(1ダイブ)</li>
-                <li class="price__text">¥10,000</li>
+                <li class="price__text">&#165;10&#44;000</li>
               </ul>
             </div>
             <div class="price__items">
               <p class="price__header">スペシャルダイビング</p>
               <ul class="price__item">
                 <li class="price__label">貸切ダイビング(2ダイブ)</li>
-                <li class="price__text">¥24,000</li>
+                <li class="price__text">&#165;24&#44;000</li>
               </ul>
               <ul class="price__item">
                 <li class="price__label">1日ダイビング(3ダイブ)</li>
-                <li class="price__text">¥32,000</li>
+                <li class="price__text">&#165;32&#44;000</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="btn price__button"><a href="#">View more</a></div>
       </div>
-      <figure class="price__image-bottom md-none"><img src="./assets/images/common/fishes-left.png" alt="魚の群れのアイコン"></figure>
+      <figure class="price__image-bottom md-none"><img src="./assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
     </section>
 
     <!-- contact -->
     <section class="contact" id="contact">
-      <figure class="contact__image-top"><img src="/assets/images/common/fishes-left.png" alt="魚の群れのアイコン"></figure>
+      <figure class="contact__image-top"><img src="/assets/images/common/fishes-left.png" alt="魚の群れの様子"></figure>
       <div class="contact__inner inner">
         <div class="contact__container">
           <div class="contact__info">
             <div class="contact__logo-block">
-              <figure class="contact__logo"><a href="#"><img src="./assets/images/common/logo_2.png" alt="会社のロゴ"></a></figure>
+              <figure class="contact__logo"><a href="#"><img src="./assets/images/common/logo_2.png" alt="CodeUpsの文字、会社のロゴ"></a></figure>
             </div>
             <div class="contact__wrapper">
-              <figure class="contact__image"><img src="./assets/images/common/noImage.jpg" alt=""></figure>
+              <figure class="contact__image"><img src="./assets/images/common/noImage.jpg" alt="イメージがない灰色の枠"></figure>
               <ul class="contact__items">
                 <li class="contact__item">沖縄県那覇市1-1</li>
                 <li class="contact__item">TEL:0120-000-0000</li>
@@ -621,11 +583,10 @@
           </div>
         </div>
       </div>
-      <div class="contact__circle"><a href="#"></a></div>
     </section>
 
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__inner inner">
       <div class="footer__top-container">
         <h1 class="footer__logo"><a href="#"><img src="./assets/images/common/logo_1.png" alt="会社のロゴ"></a></h1>
@@ -638,7 +599,7 @@
         <div class="footer-menu__container-left">
           <div class="footer-menu__sub-container--left1">
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">キャンペーン</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">キャンペーン</a></p>
               <ul class="footer-menu__items">
                 <li class="footer-menu__item"><a href="#">ライセンス取得</a></li>
                 <li class="footer-menu__item"><a href="#">貸切体験ダイビング</a></li>
@@ -646,12 +607,12 @@
               </ul>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">私たちについて</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">私たちについて</a></p>
             </div>
           </div>
           <div class="footer-menu__sub-container--right1">
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name footer-menu__list-name--space"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">ダイビング情報</p>
+              <p class="footer-menu__list-name footer-menu__list-name--space"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン">ダイビング情報</p>
               <ul class="footer-menu__items">
                 <li class="footer-menu__item"><a href="#">ライセンス講習</a></li>
                 <li class="footer-menu__item"><a href="#">体験ダイビング</a></li>
@@ -659,17 +620,17 @@
               </ul>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">ブログ</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">ブログ</a></p>
             </div>
           </div>
         </div>
         <div class="footer-menu__container-right">
           <div class="footer-menu__sub-container--left2">
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">お客様の声</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">お客様の声</a></p>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">料金一覧</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">料金一覧</a></p>
               <ul class="footer-menu__items">
                 <li class="footer-menu__item"><a href="#">ライセンス講習</a></li>
                 <li class="footer-menu__item"><a href="#">体験ダイビング</a></li>
@@ -679,25 +640,28 @@
           </div>
           <div class="footer-menu__sub-container--right2">
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name footer-menu__list-name--space"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">よくある質問</p>
+              <p class="footer-menu__list-name footer-menu__list-name--space"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">よくある質問</a></p>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">プライバシー<br class="md-show"><span class="footer-menu__space"></span>ポリシー</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">プライバシー<br class="md-show"><span class="footer-menu__space"></span>ポリシー</a></p>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">利用規約</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">利用規約</a></p>
             </div>
             <div class="footer-menu__contents">
-              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのアイコン">お問い合わせ</p>
+              <p class="footer-menu__list-name"><img class="starfish-icon" src="./assets/images/common/starfish.png" alt="ヒトデのデザイン"><a href="#">お問い合わせ</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__copyright">
-      <p class="footer__copyright-text">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</p>
+      <p class="footer__copyright-text">Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
     </div>
   </footer>
+
+  <div id="pageTop"><a href="#"></a></div>
+
 </body>
 
 </html>

@@ -7,7 +7,10 @@
     padding: rem(140) 0 rem(160);
   }
 }
-
+.contact__inner {
+  max-width: rem(600);
+  width: 100%;
+}
 .contact__image-top {
   position: absolute;
   top: rem(54);
@@ -28,8 +31,8 @@
   flex-direction: column;
   @include mq(md) {
     flex-direction: row;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    padding: rem(80) 0;
+    box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, 0.25);
+    padding: rem(80) rem(50) rem(80);
   }
 }
 
@@ -38,22 +41,20 @@
   @include mq(md) {
     padding-top: initial;
     width: 100%;
-    max-width: calc((440 / 1080) * 100%);
-    margin-left: rem(50);
-    margin-right: rem(82);
+    max-width: calc((572 / 1080) * 100%);
+    padding-right: rem(82);
     padding: rem(26) 0 0;
   }
 }
 .contact__logo-block {
   display: block;
   padding-bottom: rem(6);
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
 }
 .contact__logo {
   width: rem(174);
   height: rem(65);
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   @include mq(md) {
     width: rem(200);
     height: rem(75);
@@ -81,7 +82,7 @@
   align-items: center;
   justify-content: center;
   @include mq(md) {
-    width: calc((146 / 440) * 100%);
+    width: calc((150 / 419) * 100%);
     align-items: initial;
     justify-content: initial;
   }
@@ -92,7 +93,7 @@
   font-family: $jp-font-family1;
   font-weight: $regular;
   line-height: calc(24 / 16);
-  margin-bottom: rem(4);
+  padding-bottom: rem(4);
 }
 
 .contact__image {
@@ -101,7 +102,7 @@
   @include mq(md) {
     margin-left: rem(21);
     margin-top: initial;
-    width: calc((273 / 440) * 100%);
+    width: calc((273 / 419) * 100%);
   }
 }
 .contact__image::before {
@@ -127,14 +128,12 @@
     padding-top: rem(20);
     margin-top: initial;
     width: 100%;
-    max-width: calc((396 / 1080) * 100%);
-    margin-right: rem(112);
-    padding-left: rem(81);
-    border-left: 1px solid $green;
+    max-width: calc((508 / 1080) * 100%);
+    padding-left: rem(16);
+    border-left: rem(1) solid $green;
     text-align: center;
   }
 }
-
 
 .title__emphasis {
   font-size: rem(14);
@@ -151,38 +150,3 @@
   margin-top: rem(40);
 }
 
-.contact__circle {
-  position: absolute;
-  bottom: rem(17);
-  right: rem(15);
-  content: "";
-  border: 1px solid $green;
-  border-radius: 50%;
-  width: rem(48);
-  height: rem(48);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $green;
-  @include mq(md) {
-    width: rem(80);
-    height: rem(80);
-    right: rem(20);
-    bottom: rem(20);
-  }
-}
-
-.contact__circle a::after {
-  content: "";
-  display: inline-block;
-  width: rem(6);
-  height: rem(28);
-  transform: skewY(-45deg);
-  border-right: 1px solid $green;
-  border-top: 1px solid $green;
-  margin-top: rem(10);
-  margin-right: rem(5);
-  @include mq(md) {
-    height: rem(40);
-  }
-}

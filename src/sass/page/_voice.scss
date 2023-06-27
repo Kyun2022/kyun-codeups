@@ -21,6 +21,8 @@
 }
 .voice__inner {
   position: relative;
+  max-width: rem(600);
+  width: 100%;
 }
 
 .voice__container {
@@ -42,7 +44,7 @@
   height: rem(162);
   position: absolute;
   bottom: rem(73);
-  right:  calc((180 / 1440) * 100%);
+  right: calc((180 / 1440) * 100%);
 }
 .voice__image-top img {
   width: 100%;

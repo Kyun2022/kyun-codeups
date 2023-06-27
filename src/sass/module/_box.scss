@@ -1,5 +1,4 @@
-@use 'global' as *;
-
+@use "global" as *;
 
 .box__container {
   display: flex;
@@ -19,7 +18,7 @@
   flex-direction: column;
   width: 100%;
   max-width: calc((149 / 313) * 100%);
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   padding-bottom: rem(1);
   @include mq(md) {
     margin-top: rem(28);
@@ -37,7 +36,7 @@
 
 .box__label {
   padding: rem(2) rem(11);
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   font-family: $jp-font-family1;
   font-weight: $regular;
   font-size: rem(12);

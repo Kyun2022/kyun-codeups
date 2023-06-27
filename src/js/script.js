@@ -12,12 +12,24 @@ jQuery(function ($) {
     }
   });
 
+  // ローディングアニメーション
+  $(window).on("load", function () {
+    $(".js-loading").delay(0).fadeIn(900);
+    $(".js-loadingTitle").delay(300).fadeIn(800);
+    $(".js-loading").delay(1000).fadeOut(900);
+    $("body")
+      .delay(3000)
+      .queue(function (next) {
+        $(this).removeClass("fixed");
+        next();
+      });
+  });
+
   // Swiper
   const swiper = new Swiper(".verticalSlider", {
-    direction: "vertical",
     loop: true,
     allowTouchMove: false,
-    effect: "slide",
+    effect: "fade",
     speed: 3000,
     autoplay: {
       delay: 3000,
@@ -26,42 +38,38 @@ jQuery(function ($) {
 
   // Swiperカード
   const mySwiperWrapper = document.querySelector(".swiper-wrapper");
-  const swiperHorizon = new Swiper(".horizonSlider", {
+  const horizonSlider = new Swiper(".horizonSlider", {
     loop: true,
     effect: "slide",
-    slidesPerView: 1.1,
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-    autoplay: {
-      delay: 3500,
-    },
+    slidesPerView: 1.26,
     breakpoints: {
-      // ブレイクポイント
-      450: {
-        // 画面幅450px以上で適用
-        slidesPerView: 1.7,
-      },
-      600: {
-        // 画面幅600px以上で適用
-        slidesPerView: 2,
-      },
       768: {
-        // 画面幅768px以上で適用
-        slidesPerView: 3,
-        spaceBetween: 40, // スライド間の距離
+        slidesPerView: 3.29,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3.49,
+        spaceBetween: 40,
       },
     },
-    on: {
-      slideChangeTransitionStart: function () {
-        mySwiperWrapper.style.transitionTimingFunction = "linear";
-      },
-      resize: function () {
-        swiperHorizon.autoplay.start();
-      },
+    spaceBetween: 24,
+    speed: 2000,
+    autoplay: {
+      delay: 1000,
     },
+    // on: {
+    //   slideChangeTransitionStart: function () {
+    //     mySwiperWrapper.style.transitionTimingFunction = "linear";
+    //   },
+      // resize: function () {
+      //   horizonSlider.autoplay.start();
+      // },
+    // },
     // 前後の矢印
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".slider__button--next",
+      prevEl: ".slider__button--prev",
     },
   });
 
@@ -173,6 +181,45 @@ box4.each(function () {
           $(this).animate({ width: "0%" }, speed4);
         });
       counter4 = 1;
+    }
+  });
+
+  // pagetop
+  let timer = null;
+  const $pageTop = $("#pageTop");
+  $pageTop.hide();
+
+  // スクロールイベント
+  $(window).on("scroll touchmove", function () {
+    // スクロール中か判定
+    if (timer !== false) {
+      clearTimeout(timer);
+    }
+
+    // スクロール量が100pxを超えたら、200ms後にフェードイン
+    timer = setTimeout(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#pageTop").fadeIn("normal");
+      } else {
+        $pageTop.fadeOut();
+      }
+    }, 200);
+
+    const scrollHeight = $(document).height();
+    const scrollPosition = $(window).height() + $(window).scrollTop();
+    const footHeight = parseInt($("#footer").innerHeight());
+
+    if (scrollHeight - scrollPosition <= footHeight - 20) {
+      // 現在の下から位置が、フッターの高さの位置にはいったら(bottom20px分を引いて調整)
+      $pageTop.css({
+        position: "absolute",
+        bottom: footHeight,
+      });
+    } else {
+      $pageTop.css({
+        position: "fixed",
+        bottom: "20px",
+      });
     }
   });
 });
