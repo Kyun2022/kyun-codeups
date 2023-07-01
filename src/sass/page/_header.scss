@@ -18,11 +18,11 @@
   justify-content: space-between;
   align-items: center;
   @include mq(md) {
-    padding-right: rem(20);
+    padding-right: rem(10);
     padding-left: rem(20);
   }
   @include mq(lg) {
-    padding-right: rem(40);
+    padding-right: rem(20);
     padding-left: rem(40);
   }
 }
@@ -92,19 +92,18 @@
 終了
 /////////////////////////////////////*/
 
-.header__item:not(:first-child) {
-  padding-left: rem(25);
-  @include mq(lg) {
-    padding-left: rem(38);
-    // padding-left: rem(34);
-  }
-}
 .header__item a {
   height: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include mq(md) {
+    padding: 0 rem(13);
+  }
+  @include mq(lg) {
+    padding: 0 rem(19);
+  }
 }
 .header__item--big {
   text-transform: uppercase;

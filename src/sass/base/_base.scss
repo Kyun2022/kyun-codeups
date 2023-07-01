@@ -45,6 +45,12 @@ article a:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
-html,body{
+
+body {
   overflow-x: hidden;
+}
+
+body.active {
+  overflow: hidden;
+  height: 100vh;
 }

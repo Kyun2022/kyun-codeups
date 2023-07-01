@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .campaign {
-  padding-top: rem(40);
+  margin-top: rem(40);
   background-color: $white;
   @include mq(md) {
-    padding-top: rem(122);
+    margin-top: rem(122);
   }
 }
 

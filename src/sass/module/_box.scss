@@ -44,6 +44,7 @@
   color: $green;
   width: 100%;
   width: fit-content;
+  margin-left: auto;
   @include mq(md) {
     padding: rem(5) rem(15);
   }

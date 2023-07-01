@@ -6,9 +6,11 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       $(".js-drawer-menu").fadeOut();
       $(this).removeClass("is-open");
+      $("body").removeClass("active");
     } else {
       $(".js-drawer-menu").fadeIn();
       $(this).addClass("is-open");
+      $("body").addClass("active");
     }
   });
 
@@ -184,7 +186,7 @@ box4.each(function () {
     }
   });
 
-  // pagetop
+  // pageTop
   let timer = null;
   const $pageTop = $("#pageTop");
   $pageTop.hide();

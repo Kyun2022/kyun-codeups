@@ -4,10 +4,13 @@
   margin-top: rem(17);
   padding-bottom: rem(10);
   margin-right: calc(50% - 50vw);
+
+
   @include mq(md) {
     margin-top: rem(40);
   }
 }
+
 .slider__items {
   display: grid;
   grid-auto-flow: column;
@@ -17,10 +20,11 @@
   display: flex;
   flex-direction: column;
   background-color: $white;
+
 }
 .slider__item a {
   display: inherit;
-  flex-direction: inherit  ;
+  flex-direction: inherit;
   flex-grow: 1;
 }
 .slider__image {
@@ -48,7 +52,7 @@
 .slider__body {
   display: flex;
   flex-direction: column;
-  flex-grow:1;
+  flex-grow: 1;
   padding: rem(17) rem(16) rem(22);
   background-color: $white;
   @include mq(md) {
