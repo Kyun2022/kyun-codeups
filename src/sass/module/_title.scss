@@ -65,3 +65,25 @@
     margin-top: rem(-7);
   }
 }
+
+/*//////////////////////////////////////
+Contactの一部分
+/////////////////////////////////////*/
+.title__emphasis {
+  font-size: rem(14);
+  font-family: $jp-font-family1;
+  font-weight: $regular;
+  color: $green;
+  line-height: calc(18 / 14);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(8);
+  }
+}
+.title__button {
+  margin-top: rem(40);
+}
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/
+

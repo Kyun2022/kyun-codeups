@@ -96,7 +96,7 @@
   padding-bottom: rem(4);
 }
 
-.contact__image {
+.contact__map {
   margin-top: rem(10);
   position: relative;
   @include mq(md) {
@@ -105,7 +105,7 @@
     width: calc((273 / 419) * 100%);
   }
 }
-.contact__image::before {
+.contact__map::before {
   content: "";
   display: block;
   padding-top: calc((160 / 295) * 100%);
@@ -113,7 +113,7 @@
     padding-top: calc((148 / 273) * 100%);
   }
 }
-.contact__image img {
+.contact__map iframe {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -135,6 +135,9 @@
   }
 }
 
+/*//////////////////////////////////////
+.title.scssにも記載
+/////////////////////////////////////*/
 .title__emphasis {
   font-size: rem(14);
   font-family: $jp-font-family1;
@@ -149,4 +152,6 @@
 .title__button {
   margin-top: rem(40);
 }
-
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

@@ -71,7 +71,8 @@
 
 .footer-menu__container-left {
   width: 100%;
-  max-width: calc((178 / 338) * 100%);
+  max-width: 53%;
+  padding-left: rem(25);
   @include mq(md) {
     display: flex;
     width: 100%;
@@ -80,8 +81,9 @@
 }
 .footer-menu__container-right {
   width: 100%;
-  max-width: calc((160 / 345) * 100%);
-  margin-left: rem(7);
+  max-width: 47%;
+  padding-left: rem(25);
+  margin-left: rem(2);
   @include mq(md) {
     margin-left: rem(26);
     display: flex;
@@ -127,6 +129,24 @@
   font-weight: $bold;
   line-height: calc(18 / 16);
   color: $white;
+  position: relative;
+}
+.footer-menu__list-name::before {
+  content: "";
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(/assets/images/common/starfish.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: rem(-24);
+}
+
+.footer-menu__list-name a {
+  display: block;
+  width: 100%;
 }
 .footer-menu__list-name a:hover {
   opacity: 0.7;
@@ -138,16 +158,9 @@
     margin-top: initial;
   }
 }
-.starfish-icon {
-  display: inline-block;
-  padding-right: rem(4);
-  width: rem(18);
-  height: rem(18);
-}
 
 .footer-menu__items {
   margin-top: rem(26);
-  margin-left: rem(22);
   @include mq(md) {
     margin-top: rem(24);
   }
@@ -164,6 +177,9 @@
   @include mq(md) {
     margin-top: rem(24);
   }
+}
+.footer-menu__item a {
+  display: block;
 }
 .footer-menu__item a:hover {
   opacity: 0.7;

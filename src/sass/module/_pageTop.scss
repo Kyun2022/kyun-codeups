@@ -18,7 +18,8 @@
   width: rem(48);
   height: rem(48);
   color: $green;
-  background-color: transparent;
+  background-color: $white;
+  opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;

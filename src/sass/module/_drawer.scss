@@ -28,18 +28,20 @@
 }
 .drawer-menu__container-left {
   width: 100%;
-  max-width: 50%;
+  max-width: 53%;
+  padding-left: rem(25);
   @include mq(md) {
-    max-width: calc((178 / 338) * 100%);
+    max-width: calc((190 / 338) * 100%);
   }
 }
 .drawer-menu__container-right {
   width: 100%;
-  max-width: 50%;
+  max-width: 47%;
   margin-left: rem(2);
+  padding-left: rem(25);
   @include mq(md) {
     margin-left: rem(7);
-    max-width: calc((160 / 338) * 100%);
+    max-width: calc((148 / 338) * 100%);
   }
 }
 
@@ -59,17 +61,31 @@
 .drawer-menu__contents:not(:first-child) {
   margin-top: rem(40);
 }
-
 .drawer-menu__list-name {
   font-size: rem(16);
   font-family: $jp-font-family1;
   font-weight: $bold;
   line-height: calc(18 / 16);
   color: $white;
+  position: relative;
 }
-
+.drawer-menu__list-name a{
+  display: block;
+  width: 100%;
+}
+.drawer-menu__list-name::before {
+  content: "";
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(/assets/images/common/starfish.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: rem(-24);
+}
 .drawer-menu__items {
-  margin-left: rem(22);
   margin-top: rem(24);
 }
 
@@ -80,4 +96,9 @@
   font-weight: $regular;
   color: $white;
   line-height: calc(18 / 16);
+  width: 100%;
+}
+.drawer-menu__item a {
+  display: block;
+  width: 100%;
 }
